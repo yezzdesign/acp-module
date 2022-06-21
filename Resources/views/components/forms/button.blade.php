@@ -1,0 +1,1 @@
+<button type="{{$type??'submit'}}" class="leading-4 tracking-wider bg-main_brand/30 border border-main_brand/40 p-2 rounded-sm right-0 text-main_font/80 hover:bg-main_brand/50 {{$class??''}}">{{$slot}}</button>

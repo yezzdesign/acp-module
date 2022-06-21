@@ -1,0 +1,15 @@
+/*
+|--------------------------------------------------------------------------
+| Module
+|--------------------------------------------------------------------------
+|
+| Generate all Routes for Module "ACP".
+|
+| All Items are prefixed with "acp." (url strings, named routes, etc)
+| All Items used the "auth" middleware
+|
+| @author:  Yezz.Design
+| @mail:    yezz.design@schodie.de
+| @version: 0.0.1 Alpha
+|
+*/

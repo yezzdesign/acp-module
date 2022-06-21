@@ -1,0 +1,16 @@
+{
+    "name": "ACP",
+    "alias": "acp",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ACP\\Providers\\ACPServiceProvider"
+    ],
+    "aliases": {
+        "Forms":          "Modules\\ACP\\Logical\\Facades\\FormsFacade",
+        "ImageControl": "Modules\\ACP\\Logical\\Facades\\ImageControlFacade"
+    },
+    "files": [],
+    "requires": []
+}

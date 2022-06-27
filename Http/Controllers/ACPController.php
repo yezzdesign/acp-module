@@ -16,14 +16,7 @@ class ACPController extends Controller
      */
     public function index()
     {
-        // Count all Users
-        $users  =   User::all();
-
-        // Return all counts or models
-        return view('acp::index', compact('users'));
-
-
-
+        return view('acp::index', ['users' => User::all()]);
     }
 
     /**

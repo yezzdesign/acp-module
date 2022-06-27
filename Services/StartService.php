@@ -2,17 +2,13 @@
 
 namespace Modules\ACP\Services;
 
-use Modules\ACP\Logical\Facades\Menu;
-
-class StartService
+class StartService extends StartServices
 {
 
-    public function __construct () {
+    public function __construct()
+    {
+        parent::__construct();
 
-        //Menu::add(__('acp::nav.home'), 'acp.backend.index', true);
-        //Menu::add(__('Test123'), 'acp.backend.index', true);
-        Menu::add(__('acp::nav.home'), 'acp.backend.index', true);
-        //app('Menu')->test();
-
+        $this->addMenu(__('acp::nav.home'), 'acp.backend.index', true);
     }
 }

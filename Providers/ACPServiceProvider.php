@@ -49,24 +49,8 @@ class ACPServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
-        //$this->app->register(MenuServiceProvider::class);
 
         $this->app->singleton('Menu', \Modules\ACP\Services\MenuService::class);
-
-        //$this->app->singleton(MenuService::class, static function ($app) {
-        //    return new MenuService();
-        //});
-
-        //$this->app->singleton('Menu', \Modules\ACP\Logical\Menu::class);
-
-        //$this->app->bind('ACPStart', \Modules\ACP\Logical\Forms::class);
-
-
-        $this->app->singleton('EditForm', Forms::class);
-
-        // Bind the class Forms on Key "Forms"
-        $this->app->bind('Forms', \Modules\ACP\Logical\Forms::class);
-
 
         // Insert ImageControl Class in App
         $this->app->bind('ImageControl', ImageControl::class);

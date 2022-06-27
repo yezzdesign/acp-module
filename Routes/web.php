@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 | @version: 0.0.1 Alpha
 |
 */
+Route::get('/dashboard', function () {
+    return redirect(\route('acp.backend.index'));
+});
 
 Route::name('acp.')->group(function () {
     Route::group(['middleware' => ['auth'], 'prefix' => 'acp'], function () {
